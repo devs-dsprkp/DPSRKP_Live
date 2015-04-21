@@ -1,0 +1,56 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="contributors"
+        android:title="Contributors">
+
+        <Preference
+            android:key="developers_button"
+            android:title="Developers" />
+
+        <Preference
+            android:key="official_button"
+            android:title="Officials" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="about_head"
+        android:title="About App">
+
+        <Preference
+            android:summary="15 April 2015"
+            android:title="Build Date" />
+
+        <Preference
+            android:summary="3.0"
+            android:title="App Version" />
+
+
+        <Preference
+            android:key="easter"
+            android:summary="1504150254"
+            android:title="Build Number" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="review"
+        android:title="Review">
+        <Preference
+            android:key="rate_app"
+            android:summary="Tell us how your experience has been"
+            android:title="Rate App"
+           />
+
+        <Preference
+            android:key="feedback"
+            android:summary="Got something to say? Reach us at\ndevs.dpsrkp@gmail.com"
+            android:title="Send Feedback" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

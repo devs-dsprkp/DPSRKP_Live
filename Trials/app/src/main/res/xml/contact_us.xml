@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Send Email">
+        <Preference
+            android:key="mail"
+            android:title="principal@dpsrkp.net"
+            android:selectable="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Call Us">
+
+        <Preference
+            android:key="reception"
+            android:summary="+91 11 2617 1267"
+            android:title="Reception" />
+
+        <Preference
+            android:key="tdept"
+            android:summary="+91 11 2618 1292"
+            android:title="Transport Department" />
+
+        <Preference
+            android:key="adminoff"
+            android:summary="+91 11 2616 6533"
+            android:title="Administrative Office" />
+
+        <Preference
+            android:key="clinic"
+            android:summary="+91 11 2616 1893"
+            android:title="Clinic" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Locate Us">
+
+        <Preference
+            android:key="locate"
+            android:layout="@layout/map_back"
+            android:selectable="true"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

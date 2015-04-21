@@ -1,0 +1,86 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The main content view -->
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/toolbar" />
+
+        <!-- <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tool_bar"
+             android:layout_marginTop="10dp"
+             android:text="@string/hello_world" />-->
+
+        <net.trials.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorPrimary"
+            android:elevation="4dp"
+            android:layout_below="@id/tool_bar"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabs"/>
+        <!--<FrameLayout
+            android:id="@+id/webview_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_below="@id/tool_bar"/>-->
+    </RelativeLayout>
+
+    <!-- The navigation drawer -->
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/cover_pic"
+            android:elevation="2dp"
+            android:paddingBottom="20dp" />
+
+        <!--<View
+            android:id="@+id/view_bar"
+            android:layout_width="match_parent"
+            android:layout_height="3.5dp"
+            android:background="#eeeeee"
+            android:layout_below="@id/image_view"
+            android:layout_marginTop="4dp"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="4dp"/>-->
+
+        <ListView
+            android:id="@+id/navlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/image_view"
+            android:background="#ffffff"
+            android:choiceMode="singleChoice"
+            android:paddingTop="5dp"
+            android:divider="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
